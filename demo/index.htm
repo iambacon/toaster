@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<title>Demo: Toaster carousel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="../src/css/cb.toaster.css">
+	<style type="text/css">
+		body {
+			padding-top: 20px;
+			margin: 0;
+			font-size: 100%;
+			font-family: Arial, Helvetica;
+			color: #333333;
+		}
+		
+		main {
+			width: 676px;
+			margin: 0 auto;
+			display: block;
+		}
+
+		h1 {
+			font-size: 26px;			
+		}
+
+		p {
+			margin-bottom: 32px;
+		}
+
+		.author {
+			color: rgb(0, 128, 128);			
+		}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../src/lib/transition-helper.js"></script>
+	<script type="text/javascript" src="../src/js/jquery.cb.toaster.js"></script>
+	<main>
+		<h1>Toaster Carousel</h1>
+		<p>Created by <a class="author" href="http://www.iambacon.co.uk">Colin Bacon</a></p>
+		<p>A jQuery UI widget using CSS transitions with a jQuery animate fallback.</p>
+		<ol class="toaster">
+			<li class="cb-toaster-item" data-cb-toaster-title="Slide 1">			
+				<img src="img/Slide1.gif">
+			</li>
+			<li class="cb-toaster-item" data-cb-toaster-title="Slide 2">			
+				<img src="img/Slide2.gif">
+			</li>
+			<li class="cb-toaster-item" data-cb-toaster-title="Slide 3">			
+				<img src="img/Slide3.gif">
+			</li>
+			<li class="cb-toaster-item" data-cb-toaster-title="Slide 4">			
+				<img src="img/Slide4.gif">
+			</li>
+		</ol>
+	</main>	
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			$('.toaster').toaster();
+		});
+	</script>
+</body>
+</html>

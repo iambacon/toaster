@@ -1,0 +1,127 @@
+/**
+ * cb.toaster.css
+ *
+ * Copyright (c) 2013 Colin Bacon
+ *  
+ */
+
+
+/* Image replacement.  Hides text and 
+    allows you to use a background image.
+  */
+.ir
+{ 
+    display: block; 
+    border: 0; 
+    text-indent: -999em; 
+    overflow: hidden; 
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    text-align: left; 
+    direction: ltr; 
+    *line-height: 0; 
+}
+
+.cb-toaster {  
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.cb-toaster-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.cb-toaster-prev.is-disabled,
+.cb-toaster-next.is-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+.cb-toaster-item {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+     -moz-transition: all 250ms ease-in-out 250ms;
+       -o-transition: all 250ms ease-in-out 250ms;
+          transition: all 250ms ease-in-out 250ms;
+}
+.cb-toaster-item img {
+  display: block;
+}
+.cb-toaster-item.is-active {
+  top: 0;
+}
+.cb-toaster-display-title {  
+  font-family: tahoma;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  line-height: 1.2;  
+  margin: 0;
+  padding: 0 70px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cb-toaster-nav {
+  position: relative;
+}
+.cb-toaster-prev,
+.cb-toaster-next {  
+  background: url(../img/toaster-sprite.png) no-repeat;
+  width: 55px;
+  height: 54px;
+  position: absolute;
+  bottom: 110px;
+  cursor: pointer;
+  top: 10px;
+  z-index: 1;
+}
+.cb-toaster-prev.is-disabled,
+.cb-toaster-next.is-disabled {
+  opacity: 0.5;
+}
+.cb-toaster-prev:hover,
+.cb-toaster-next:hover {
+  opacity: 0.7;
+  -webkit-transition: all .5s ease-out;
+     -moz-transition: all .5s ease-out;
+       -o-transition: all .5s ease-out;
+          transition: all .5s ease-out;
+}
+.cb-toaster-prev {
+  background-position: 0 -64px;
+  left: 0;
+}
+.cb-toaster-next {
+  background-position: 0 0;
+  right: 0;
+}
+.cb-toaster-paging {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  text-align: center;
+  padding: 0;
+}
+.cb-toaster-paging-item {
+  display: inline;
+  padding: 5px;
+}
+.cb-toaster-paging-link {
+  border-radius: 50%;      
+  background-color: #CECFCE;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  -webkit-transition: all .5s ease-out;
+     -moz-transition: all .5s ease-out;
+       -o-transition: all .5s ease-out;
+          transition: all .5s ease-out;
+}
+.cb-toaster-paging-item.is-active .cb-toaster-paging-link,
+.cb-toaster-paging-link:hover {
+  background-color: #949694;
+}
