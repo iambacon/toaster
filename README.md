@@ -51,5 +51,5 @@ Initialise the plugin by calling:
 **Instant achievement!**
 
 
-[ref1]:http://demo.iambacon.co.uk/semantic-grid-helper
+[ref1]:https://demo.iambacon.co.uk/toaster
 [ref2]:https://github.com/iambacon/transition-helper
